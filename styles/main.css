@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
 }
 
+/* header */
 .header {
     max-height: 165px;
     height: 100vh;
@@ -79,7 +80,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: #263238;
 }
 
-
 .nav__item {
     list-style: none;
 }
@@ -117,3 +117,74 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 5px;
     background-position: left;
 }
+
+/* started */
+.started {
+}
+.started__content-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.started__left {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.started__title-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.started__title-flex h1 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 125%;
+    color: #000;
+    max-width: 390px;
+    width: 100%;
+}
+
+.started__left p {
+    margin-top: 40px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #8f95a5;
+    max-width: 550px;
+    width: 100%;
+}
+
+.started__img {
+    align-self: flex-end;
+    margin-bottom: 28px;
+    margin-left: 40px;
+}
+.started__button {
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 15px;
+    width: 438px;
+    height: 118px;
+    background: #263238;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.started__button:hover {
+    transform: scale(1.1);
+}
+
+.started__right {
+    margin-top: -40px;
+    max-width: 661px;
+    max-height: 661px;
+}
+
+/* skills */
