@@ -26,12 +26,24 @@
                 </ul>
                 </div>
                 <a class="header__button" href="#">Let’s Talk</a>
+                <a class="header__burger" href="#">
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                    <div class="burger__line"></div>
+                </a>
             </div>
         </div>
     </header>
+    
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.header__nav-flex');
 
-
-
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    burger.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
