@@ -6,27 +6,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <title>Document</title>
 </head>
 <body>
+    <ul id="slide-out" class="sidenav">
+        <li class="sidenav__logo">
+            <img src="image/logo.svg" alt="logo">
+            <a href="#!" class="sidenav-close"><i class="material-icons">close</i></a>
+        </li>
+        <div class="sidenav__line"></div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contacts</a></li>
+        <a class="sidenav__button" href="#">Let’s Talk</a>
+    </ul>
+
     <header class="header">
         <div class="container">
             <div class="header__top-flex">
                 <a class="header__logo" href="#"><img src="image/logo.svg" alt="логотип компании"></a>
                 <div class="header__nav-flex">
                     <ul class="header__nav__left-flex">
-                    <li class="nav__item"><a href="#">Home</a></li>
-                    <li class="nav__item"><a href="#">Skills</a></li>
-                    <li class="nav__item"><a href="#">About Us</a></li>
-                </ul>
-                <ul class="header__nav__right-flex">
-                    <li class="nav__item"><a href="#">Pricing</a></li>
-                    <li class="nav__item"><a href="#">Contacts</a></li>
-                </ul>
+                        <li class="nav__item"><a href="#">Home</a></li>
+                        <li class="nav__item"><a href="#">Skills</a></li>
+                        <li class="nav__item"><a href="#">About Us</a></li>
+                    </ul>
+                    <ul class="header__nav__right-flex">
+                        <li class="nav__item"><a href="#">Pricing</a></li>
+                        <li class="nav__item"><a href="#">Contacts</a></li>
+                    </ul>
                 </div>
                 <a class="header__button" href="#">Let’s Talk</a>
-                <a class="header__burger" href="#">
+                <a data-target="slide-out" class="header__burger sidenav-trigger" href="#">
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
                     <div class="burger__line"></div>
@@ -35,14 +51,12 @@
         </div>
     </header>
     
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.header__nav-flex');
-
-  burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    burger.classList.toggle('active');
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
 </script>
 
 </body>
