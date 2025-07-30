@@ -107,8 +107,6 @@ h1, h2, h3, h4, h5, h6, p {
 /* header */
 .header {
     padding: 0 130px;
-    max-height: 165px;
-    height: 100vh;
 }
 .header__top-flex {
     margin-top: 52px;
@@ -383,6 +381,64 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 /* started */
+.started {
+    margin-top: 50px;
+}
+.started__content-flex {
+    padding: 0 122px 0 130px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.started__left-flex {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.started__left-flex h1 {
+    max-width: 386px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 125%;
+    color: #000;
+}
+
+.started__left-flex img {
+    align-self: center;
+    position: absolute;
+    top: 92px;
+    right: 8px;
+}
+
+.started__left-flex p {
+    margin-top: 40px;
+    max-width: 550px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #8f95a5;
+}
+
+.started__button {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #263238;
+    border-radius: 15px;
+    max-width: 438px;
+    height: 118px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 36px;
+    color: #fff;
+}
+.started__right {
+    max-width: 661px;
+}
 
 
 /* skills */
