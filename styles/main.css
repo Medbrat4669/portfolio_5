@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6, p {
 .container {
     margin: 0 auto;
     max-width: 1600px;
+    padding: 0 130px;
     width: 100%;
 }
 
@@ -106,7 +107,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* header */
 .header {
-    padding: 0 130px;
 }
 .header__top-flex {
     margin-top: 52px;
@@ -116,12 +116,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header__logo {
     width: 120px;
+    padding-right: 30px;
 }
 
 .header__logo img {
     display: inline-block;
     max-width: 106px;
-    width: 100%;
     height: 54px;
     transition: transform 0.3s ease;
 }
@@ -225,6 +225,10 @@ h1, h2, h3, h4, h5, h6, p {
     .header {
         padding: 0 31px;
     }
+    
+    .container {
+        padding: 0;
+    }
 
     .header__logo {
         width: 95px;
@@ -264,8 +268,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 767px) {
+
+    .container {
+        padding: 0;
+    }
+
     .header__top-flex {
-        margin-top: 25px;
+        margin-top: 33px;
     }
 
     .header {
@@ -385,19 +394,27 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 50px;
 }
 .started__content-flex {
-    padding: 0 122px 0 130px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 .started__left-flex {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    position: relative;
+    max-width: 550px;
 }
 
-.started__left-flex h1 {
+.started__left-title {
+    display: flex;
+    gap: 36px;
+}
+
+.started__left-title img {
+    align-self: center;
+    margin-top: 65px;
+}
+
+.started__left-title h1 {
     max-width: 386px;
     font-family: var(--font-family);
     font-weight: 600;
@@ -406,12 +423,6 @@ h1, h2, h3, h4, h5, h6, p {
     color: #000;
 }
 
-.started__left-flex img {
-    align-self: center;
-    position: absolute;
-    top: 92px;
-    right: 8px;
-}
 
 .started__left-flex p {
     margin-top: 40px;
@@ -438,6 +449,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .started__right {
     max-width: 661px;
+}
+
+.started__right img {
+    max-width: 661px;
+    width: 100%;
 }
 
 
