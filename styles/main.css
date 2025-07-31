@@ -368,6 +368,34 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 320px) {
+        .header__top-flex {
+        margin-top: 26px;
+    }
+
+    .header__logo img {
+        max-width: 71px;
+        width: 100%;
+    }
+
+    .header > .container {
+        padding: 0 15px;
+    }
+
+    .header__burger {
+        margin-right: 0;
+        max-width: 33px;
+        height: 19px;
+    }
+
+    .burger__line {
+        width: 33px;
+        height: 3px;
+    }
+    
+    .burger__line:nth-of-type(3) {
+        width: 24px;
+    }
+
     .sidenav {
         max-width: 575px;
         width: 100%;
@@ -632,6 +660,71 @@ h1, h2, h3, h4, h5, h6, p {
 
     .started__right img {
         max-width: 424px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .started > .container {
+        padding: 0 10px;
+    }
+
+    .started__content-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .started__left-flex {
+        margin-top: 38px;
+        max-width: none;
+        width: 100%;
+        align-items: center;
+    }
+
+    .started__left-title h1 {
+        max-width: none;
+        font-size: 24px;
+        line-height: 150%;
+        text-align: center;
+    }
+
+    .started__left-title br {
+        display: none;
+    }
+
+    .started__left-title h1 span::before {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .started__left-title img {
+        display: none;
+    }
+
+    .started__content-flex p {
+        margin-top: 19px;
+        max-width: 295px;
+        font-size: 14px;
+    } 
+
+    .started__button{
+        font-size: 16px;
+        margin-top: 37px;
+        max-width: 289px;
+        width: 100%;
+        height: 60px;
+        
+    }
+
+    .started__right {
+        margin-top: -16px;
+        max-width: 299px;
+        height: 299px;
+    }
+
+    .started__right img {
+        max-width: 299px;
         width: 100%;
     }
 }
