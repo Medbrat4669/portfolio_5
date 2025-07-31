@@ -232,10 +232,6 @@ h1, h2, h3, h4, h5, h6, p {
     .container {
         padding: 0 30px;
     }
-    
-    .container {
-        padding: 0;
-    }
 
     .header__logo {
         width: 95px;
@@ -278,16 +274,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (max-width: 767px) {
 
-    .container {
-        padding: 0;
-    }
-
     .header__top-flex {
         margin-top: 33px;
     }
 
     .header {
-        padding: 0 39px;
+        padding: 0;
     }
 
     .header__logo {
@@ -519,4 +511,52 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 0 39px;
+    }
+
+    .started__left-title h1 {
+        font-size: 36px;
+        line-height: 125%;
+        max-width: 217px;
+    }
+
+    .started {
+        margin-top: 10px;
+    }
+
+    .started__left-title {
+        gap: 0;
+    }
+
+    .started__left-flex p {
+        font-size: 16px;
+        max-width: 335px;
+    }
+
+    .started__left-title img {
+        margin-top: 67px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .started__button {
+        margin-top: 29px;
+        max-width: 236px;
+        height: 65px;
+        font-size: 18px;
+    }
+
+    .started__right {
+    }
+
+    .started__right img {
+        margin-top: 21px;
+        margin-left: 0;
+        padding-left: 0px;
+        max-width: 352px;
+        width: 100%;
+    }
+}
 /* skills */
