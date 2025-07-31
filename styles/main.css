@@ -147,6 +147,10 @@ h1, h2, h3, h4, h5, h6, p {
     color: #263238;
 }
 
+.header__nav__left-flex :nth-child(3){
+    width: 91px;
+}
+
 .header__nav__right-flex {
     display: flex;
     gap: 31px;
@@ -180,7 +184,9 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 17px 57px;
+    text-align: center;
+    width: 220px;
+    height: 70px;
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24px;
@@ -188,6 +194,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: border 0.3s ease;
     border: 2px solid transparent;
     border-radius: 5px;
+    flex-wrap: nowrap;
 }
 
 .header__button:hover {
@@ -219,11 +226,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media screen and (max-width: 992px) {
     .header__top-flex {
-        margin-top: 25px;
+        margin-top: 24px;
     }
 
-    .header {
-        padding: 0 31px;
+    .container {
+        padding: 0 30px;
     }
     
     .container {
@@ -239,7 +246,7 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .header__nav-flex {
-        margin-left: 62px;
+        margin-left: 61px;
         max-width: 414px;
         width: 100%;
         gap: 0px;
@@ -262,7 +269,9 @@ h1, h2, h3, h4, h5, h6, p {
 
     .header__button {
         font-size: 18px;
-        padding: 11px 40px;
+        width: 160px;
+        height: 50px;
+        margin-left: 2px;
     }
 
 }
@@ -456,5 +465,58 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .started {
+        margin-top: 24px;
+    }
+
+    .started__left-title {
+        gap: 13px;
+    }
+
+    
+    .started__left-title h1 {
+        max-width: 290px;
+        font-size: 48px;
+        line-height: 133%;
+    }
+
+
+    .started__left-flex p {
+        margin-top: 26px;
+        font-size: 20px;
+        max-width: 420px;
+    }
+
+    .started__left-title img {
+        margin-top: 70px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .started__button {
+        margin-top: 32px;
+        max-width: 292px;
+        height: 80px;
+        border-radius: 5px;
+        font-size: 24px;
+    }
+
+    .started__right {
+        max-width: 460px;
+    }
+
+    .started__right img {
+        margin-top: 35px;
+        margin-left: 8px;
+        max-width: 460px;
+        width: 100%;
+    }
+
+}
 
 /* skills */
