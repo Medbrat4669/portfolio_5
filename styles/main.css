@@ -728,4 +728,200 @@ h1, h2, h3, h4, h5, h6, p {
         width: 100%;
     }
 }
+
 /* skills */
+.skills {
+    padding-top: 103px;
+    padding-bottom: 50px;
+}
+
+.skills h2 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 167%;
+    color: #000;
+    text-align: center;
+}
+
+.skills__grid-item {
+    background-color: #f5f5f5;
+    border: 1px red solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.skills__grid-image img {
+    max-width: 100%;
+}
+
+.skills__grid-content h3 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 267%;
+    color: #263238;
+}
+
+.skills__grid-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #8f95a5;
+    max-width: 435px;
+    width: 100%;
+}
+
+.skills__grid-content button {
+    border-radius: 5px;
+    width: 218px;
+    height: 60px;
+    background: #263238;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.skills__grid {
+    margin-top: 92px;
+    display: grid;
+    grid-template-columns: 435px 435px 435px;
+    gap: 15px;
+    grid-template-areas:
+    "one two three"
+    "one four four";
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.skills__grid-content {
+}
+
+/* элемент 1 */
+.speaking {
+    grid-area: one;
+    width: 100%;
+    height: 894px;
+}
+
+.speaking .skills__grid-content p {
+    max-width: 341px;
+}
+
+.speaking .skills__grid-image {
+    margin-top: 35px;
+    align-self: center;
+}
+
+.speaking .skills__grid-content {
+    padding-left: 37px;
+}
+
+.speaking .skills__grid-content button {
+    margin-top: 40px;
+}
+/* элемент 2 */
+.writing {
+    position: relative;
+    grid-area: two;
+    width: 100%;
+    height: 531px;
+}
+
+.writing .skills__grid-content p {
+    margin-top: -8px;
+    max-width: 361px
+}
+
+.writing .skills__grid-image {
+    position: absolute;
+    top: 0;
+    right: 22px;
+}
+
+.writing .skills__grid-content {
+    padding-left: 38px;
+    margin-top: 244px;
+}
+
+.writing .skills__grid-content h3 {
+    padding-top: 8px;
+}
+
+.writing .skills__grid-content button {
+    margin-top: 33px;
+}
+
+/* элемент 3 */
+
+.reading {
+    position: relative;
+    grid-area: three;
+    width: 100%;
+    height: 532px;
+}
+
+.reading .skills__grid-content p {
+    margin-top: -15px;
+    max-width: 361px
+}
+
+.reading .skills__grid-content {
+    margin-top: 255px;
+    padding-left: 40px;
+}
+
+.reading .skills__grid-image {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+.reading .skills__grid-content button {
+    margin-top: 35px;
+}
+
+/* элемент 4 */
+
+.listening {
+    padding-left: 44px;
+    grid-area: four;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 885px;
+    width: 100%;
+    height: 343px;
+}
+
+.listening .skills__grid-content {
+    margin-top: 45px;
+}
+
+.listening .skills__grid-content p {
+    margin-top: -2px;
+    max-width: 332px;
+}
+
+.listening .skills__grid-content button {
+    margin-top: 24px;
+    margin-left: -2px;
+}
+
+.listening .skills__grid-image {
+    margin-top: 50px;
+    margin-right: 26px;
+}
+
+.listening .skills__grid-image {
+    order: 1;
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+
