@@ -1035,7 +1035,7 @@ h1, h2, h3, h4, h5, h6, p {
         margin-top: -15px;
     }
 
-    .listening .skills__grid-content img {
+    .listening .skills__grid-image img {
         max-width: 254px;
     }
 
@@ -1050,4 +1050,145 @@ h1, h2, h3, h4, h5, h6, p {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .skills {
+        padding-top: 42px;
+    }
 
+    .skills h2 {
+        font-size: 36px;
+        line-height: 222%;
+    }
+
+    .skills__grid {
+        margin-top: 53px;
+    }
+
+        /* элемент 1 */
+    .speaking {
+        height: 696px;
+    }
+
+    .speaking .skills__grid-content h3 {
+        font-size: 22px;
+        line-height: 364%;
+    }
+
+    .speaking .skills__grid-content p {
+        margin-top: -10px;
+        max-width: 240px;
+        font-size: 14px;
+    }
+
+    .speaking .skills__grid-image {
+        margin-top: 0;
+        height: 260px;
+    }
+
+    .speaking .skills__grid-content {
+        padding-left: 30px;
+    }
+
+    .speaking .skills__grid-content button {
+        margin-top: 44px;
+    }
+
+    /* элемент 2 */
+    .writing {
+        height: 441px;
+    }
+
+    .writing .skills__grid-content h3 {
+        font-size: 22px;
+        line-height: 364%;
+    }
+
+    .writing .skills__grid-content p {
+        margin-top: -8px;
+        max-width: 245px;
+        font-size: 14px;
+    }
+
+    .writing .skills__grid-image {
+        position: absolute;
+        top: 0;
+        right: 5px;
+    }
+
+    .writing .skills__grid-image img {
+        max-width: 205px;
+    }
+
+    .writing .skills__grid-content {
+        padding-left: 30px;
+        margin-top: 170px;
+    }
+
+    .writing .skills__grid-content button {
+        margin-top: 19px;
+    }
+
+    /* элемент 3 */
+    .reading > .skills__grid-image {
+        top: 14px;
+        left: 4px;
+    }
+
+    .reading .skills__grid-content p {
+        margin-top: -15px;
+        max-width: 240px;
+        font-size: 14px;
+    }
+
+    .reading .skills__grid-content {
+        margin-top: 179px;
+        padding-left: 26px;
+    }
+
+    .reading .skills__grid-content button {
+        margin-top: 23px;
+    }
+
+    /* элемент 4 */
+    .listening {
+        height: 241px;
+        align-items: flex-start;
+        padding-left: 30px;
+    }
+
+    .listening .skills__grid-content {
+        margin-top: 0;
+    }
+
+    .listening .skills__grid-content h3 {
+        font-size: 22px;
+        line-height: 364%;
+    }
+
+    .listening .skills__grid-content p {
+        font-size: 14px;
+        margin-top: -15px;
+        margin-left: 4px;
+        max-width: 300px;
+    }
+
+    .listening .skills__grid-image {
+        margin-right: 15px;
+    }
+
+    .listening .skills__grid-image img {
+        max-width: 254px;
+        height: 169px;
+        margin-top: 3px;
+    }
+
+    .listening .skills__grid-content button {
+        margin-top: 19px;
+        margin-left: 0;
+    }
+
+    .listening .skills__grid-image {
+        margin-top: 0;
+        margin-right: 26px;
+    }
+}
