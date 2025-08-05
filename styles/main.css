@@ -746,7 +746,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .skills__grid-item {
     background-color: #f5f5f5;
-    border: 1px red solid;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -1745,3 +1744,67 @@ h1, h2, h3, h4, h5, h6, p {
         margin-top: 40px;
     }
 }
+
+/* about us */
+.about__us { 
+    margin-top: 205px;
+    padding-bottom: 100px;
+}
+
+.about__us h3 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    color: #000;
+}
+
+.about__us p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #8f95a5;
+}
+
+.about__us-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.about__us-left h3 {
+    margin-top: 30px;
+}
+
+.about__us-left p {
+    max-width: 635px;
+    margin-top: 20px;
+}
+
+.about__us__bottom-flex {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 603px;
+}
+
+.about__us__bottom-flex p {
+    margin-top: -5px;
+}
+
+.bottom__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__us-right {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.about__us-right img {
+    width: 100%;
+}
+
+
