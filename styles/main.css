@@ -1807,4 +1807,39 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
 }
 
+@media screen and (max-width: 992px){
+    .about__us {
+        margin-top: 25px;
+    }
 
+    .about__us h3 {
+        font-size: 36px;
+    }
+
+    .about__us p {
+        font-size: 16px;
+    }
+
+    .about__us-left p {
+        margin-top: 13px;
+        max-width: 516px;
+    }
+
+    .about__us__bottom-flex {
+        margin-top: -20px;
+        max-width: 390px;
+        margin-left: 8px;
+    }
+
+    .bottom__item h3 {
+        font-size: 30px;
+    }
+
+    .bottom__item p {
+        margin-top: -10px;
+    }
+
+    .about__us-right {
+        max-width: 324px;
+    }
+}
