@@ -1843,3 +1843,50 @@ h1, h2, h3, h4, h5, h6, p {
         max-width: 324px;
     }
 }
+
+@media screen and (max-width: 767px){
+    .skills {
+        padding-bottom: 0;
+    }
+
+    .about__us {
+        margin-top: 59px;
+    }
+
+    .about__us h3 {
+        margin-top: 22px;
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .about__us p {
+        margin-top: 29px;
+        font-size: 14px;
+    }
+
+    .about__us-left p {
+        margin-top: 29px;
+        max-width: 320px;
+    }
+
+    .about__us__bottom-flex {
+        margin-top: 11px;
+        max-width: 320px;
+        margin-left: 8px;
+    }
+
+    .bottom__item h3 {
+        font-size: 22px;
+    }
+
+    .bottom__item p {
+        margin-top: 20px;
+    }
+
+    .about__us-right {
+        max-width: 295px;
+        height: 295px;
+        margin-right: 0;
+        margin-top: 28px;
+    }
+}
