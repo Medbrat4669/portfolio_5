@@ -1558,3 +1558,190 @@ h1, h2, h3, h4, h5, h6, p {
         margin-top: 142px;
     }
 }
+
+@media screen and (max-width: 545px){
+    .skills > .container {
+        padding: 0 5px;
+    }
+
+    .skills__grid {
+        gap: 10px
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    .skills__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+    }
+
+    .skills__grid-item {
+        margin: 0 auto;
+        max-width: 290px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .skills__grid-content button {
+        width: 178px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .skills__grid-item {
+        height: 473px;
+    }
+
+    .skills {
+        padding-top: 58px;
+    }
+
+    .skills h2 {
+        font-size: 24px;
+    }
+
+    /* элемент 1 */
+    .speaking{
+        height: 600px;
+    }
+    .speaking .skills__grid-image {
+        align-self: center;
+        margin-left: 0;
+        margin-top: 9px;
+        width: 213px;
+        height: 213px;
+    }
+    .speaking .skills__grid-image img {
+        width: 213px;
+        height: 213px;
+    }
+
+    .speaking .skills__grid-content h3 {
+        margin-top: 0;
+    }
+
+    .speaking .skills__grid-content p {
+        max-width: 240px;
+    }
+
+    .speaking .skills__grid-content {
+        padding-left: 12px;
+        margin-top: 30px;
+    }
+
+    .speaking .skills__grid-content button {
+        margin-top: 47px;
+    }
+
+    /* элемент 2 */
+    .writing{
+
+    }
+    .writing .skills__grid-image {
+        margin-top: 18px;
+        position: static;
+        align-self: center;
+        width: 204px;
+        height: 204px;
+
+    }
+    .writing .skills__grid-image img {
+        width: 204px;
+        height: 204px;
+    }
+
+    .writing .skills__grid-content h3 {
+
+    }
+
+    .writing .skills__grid-content p {
+        margin-top: 2px;
+        max-width: 255px;
+    }
+
+    .writing .skills__grid-content {
+        margin-top: 20px;
+        padding-left: 12px;
+    }
+
+    .writing .skills__grid-content button {
+        margin-top: 30px;
+    }
+
+    /* элемент 3 */
+    .reading{
+
+    }
+    .reading .skills__grid-image {
+        margin-top: 32px;
+        position: static;
+        align-self: center;
+        width: 236px;
+        height: 157px;
+
+    }
+    .reading .skills__grid-image img {
+        width: 236px;
+        height: 157px;
+    }
+
+    .reading .skills__grid-content h3 {
+
+    }
+
+    .reading .skills__grid-content p {
+        margin-top: 2px;
+        max-width: 250px;
+    }
+
+    .reading .skills__grid-content {
+        margin-top: 40px;
+        padding-left: 14px;
+    }
+
+    .reading .skills__grid-content button {
+        margin-top: 33px;
+    }
+
+    /* элемент 4 */
+    .listening{
+
+    }
+    .listening .skills__grid-image {
+        margin-left: 0;
+        margin-top: 35px;
+        align-self: center;
+        width: 232px;
+        height: 154px;
+
+    }
+    .listening .skills__grid-image img {
+        width: 232px;
+        height: 154px;
+    }
+
+    .listening .skills__grid-content h3 {
+
+    }
+
+    .listening .skills__grid-content p {
+        margin-top: 2px;
+        max-width: 250px;
+    }
+
+    .listening .skills__grid-content {
+        margin-top: 40px;
+        padding-left: 14px;
+    }
+
+    .listening .skills__grid-content button {
+        margin-top: 40px;
+    }
+}
