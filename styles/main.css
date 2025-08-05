@@ -1355,3 +1355,206 @@ h1, h2, h3, h4, h5, h6, p {
         margin-left: 0;
     }
 }
+
+@media screen and (max-width: 690px) {
+    .skills > .container {
+        padding: 0;
+    }
+
+    .skills__grid {
+        gap: 3px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        grid-template-areas:
+        "one two"
+        "three four";
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+
+    .skills > .container {
+        padding: 0 30px;
+    }
+
+    .speaking {
+        height: 534px;
+    }
+
+    .writing {
+        height: 534px;
+    }
+
+    .reading {
+        height: 534px;
+    }
+
+    .listening {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+        height: 534px;
+    }
+}
+
+@media screen and (max-width: 575px){
+    .skills {
+        padding-top: 95px;
+    }
+
+    .skills h2 {
+        font-size: 30px;
+        line-height: 267%;
+    }
+
+    .skills__grid {
+        gap: 30px 34px;
+    }
+
+    .skills__grid-content button {
+        width: 200px;
+        height: 50px;
+    }
+
+    /* элемент 1 */
+    .speaking {
+
+    }
+
+    .speaking .skills__grid-image {
+        align-self: flex-start;
+        margin-top: -11px;
+        margin-left: 10px;
+        width: 185px;
+        height: 185px;
+    }
+    .speaking .skills__grid-image img {
+        width: 185px;
+        height: 185px;
+    }
+
+    .speaking .skills__grid-content {
+
+    }
+
+    .speaking .skills__grid-content h3 {
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .speaking .skills__grid-content p {
+        font-size: 12px;
+        margin-top: 5px;
+        max-width: 183px;
+    }
+
+    .speaking .skills__grid-content button {
+        margin-top: 23px;
+        font-size: 14px;
+    }
+
+    /* элемент 2 */
+    .writing .skills__grid-image {
+        width: 182px;
+        height: 182px;
+        top: 1px;
+        left: 21px;
+    }
+    .writing .skills__grid-image img {
+        width: 182px;
+        height: 182px;
+    }
+
+    .writing .skills__grid-content h3 {
+        margin-top: 2px;
+        font-size: 18px;
+        line-height: 44px;
+    }
+
+    .writing .skills__grid-content p {
+        margin-top: -2px;
+        font-size: 12px;
+        max-width: 170px;
+    }
+
+    .writing .skills__grid-content button {
+        margin-top: 130px;
+        font-size: 14px;
+    }
+
+        /* элемент 3 */
+    .reading .skills__grid-image {
+        top: 31px;
+        left: 0;
+        width: 198px;
+        height: 132px;
+    }
+    .reading .skills__grid-image img {
+        width: 198px;
+        height: 132px;
+    }
+
+    .reading .skills__grid-content {
+        margin-top: 183px;
+        padding-left: 17px;
+    }
+
+    .reading .skills__grid-content h3 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .reading .skills__grid-content p {
+        margin-top: 5px;
+        font-size: 13px;
+        max-height: 200px ;
+    }
+
+    .reading .skills__grid-content button {
+        margin-top: 123px;
+        font-size: 14px;
+    }
+
+    /* элемент 4 */
+    .listening {
+        padding-left: 0;
+    }
+    .listening .skills__grid-image {
+        margin-top: 35px;
+        margin-left: 13px;
+        order: 0;
+        width: 206px;
+        height: 137px;
+    }
+    .listening .skills__grid-image img {
+        width: 206px;
+        height: 137px;
+    }
+
+    .listening .skills__grid-content {
+        margin-top: 16px;
+        position: static;
+        padding-left: 19px;
+    }
+
+    .listening .skills__grid-content h3 {
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    .listening .skills__grid-content p {
+        position: static;
+        font-size: 13px;
+        max-width: 200px;
+    }
+
+    .listening .skills__grid-content button {
+        margin-top: 142px;
+    }
+}
